@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Model"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Resource"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.ModelFactory"/>
+<fullyQualifiedTypeName name="org.apache.jena.vocabulary.VCARD"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.StmtIterator"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Statement"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Property"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.RDFNode"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
+<fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
+<fullyQualifiedTypeName name="org.apache.jena.util.FileManager"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.Query"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QueryFactory"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QueryExecution"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QueryExecutionFactory"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.ResultSet"/>
+<fullyQualifiedTypeName name="org.apache.jena.query.QuerySolution"/>
+<fullyQualifiedTypeName name="org.apache.jena.vocabulary.RDF"/>
+<fullyQualifiedTypeName name="org.apache.jena.vocabulary.OWL"/>
+<fullyQualifiedTypeName name="org.apache.jena.vocabulary.RDFS"/>
+<fullyQualifiedTypeName name="org.apache.jena.sparql.vocabulary.FOAF"/>
+<fullyQualifiedTypeName name="org.apache.jena.datatypes.xsd.XSDDatatype"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Literal"/>
+<fullyQualifiedTypeName name="org.apache.jena.ontology.OntModel"/>
+<fullyQualifiedTypeName name="org.apache.jena.ontology.OntModelSpec"/>
+<fullyQualifiedTypeName name="org.apache.jena.graph.BlankNodeId"/>
+</qualifiedTypeNameHistroy>

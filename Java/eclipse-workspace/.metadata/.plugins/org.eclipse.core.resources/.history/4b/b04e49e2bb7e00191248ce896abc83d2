@@ -1,0 +1,111 @@
+package app;
+
+import app.assets.City;
+import app.assets.Event;
+import app.assets.Time;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Initialize {
+    private ArrayList<City> cityList = new ArrayList<>();
+    private HashMap<String, String> nsPrefix = new HashMap<String, String>() {{
+        put("event", "http://purl.org/NET/c4dm/event.owl#");
+        put("dbr", "http://dbpedia.org/resource/");
+        put("dbo", "http://dbpedia.org/ontology/");
+        put("time", "http://www.w3.org/2006/time#");
+        put("timeline", "http://purl.org/NET/c4dm/timeline.owl#");
+        put("foaf", "http://xmlns.com/foaf/0.1/");
+        put("geo", "http://www.w3.org/2003/01/geo/wgs84_pos#");
+        put("schema", "https://schema.org/");
+    }};
+
+    public void buildEntries() {
+        try {
+            File radioactivityXMLFile = new File("src/database/datasets/Radioaktivitet.xml");
+            File landslidesXMLFile = new File("src/database/datasets/Jordskred.xml");
+            File floodXMLFile = new File("src/database/datasets/Flom.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document radioactivity = dBuilder.parse(radioactivityXMLFile);
+            Document landslide = dBuilder.parse(landslidesXMLFile);
+            Document flood = dBuilder.parse(floodXMLFile);
+
+            // Normalizing.
+            radioactivity.getDocumentElement().normalize();
+            landslide.getDocumentElement().normalize();
+            flood.getDocumentElement().normalize();
+
+            // XML NodeLists.
+            NodeList nList = radioactivity.getElementsByTagName("station");
+
+            // Looping through the documents and extracting data.
+            for(Integer i = 0; i < nList.getLength(); i++) {
+                // Building the base class; city.
+                City city = new City();
+                city.name = nList.item(i).getAttributes().getNamedItem("name").getNodeValue().replace(" ", "_");
+                city.prefix = nsPrefix.get("dbr");
+                city.location = nList.item(i).getAttributes().getNamedItem("location").getNodeValue().replace(" ", "");
+                city.latitude = Float.valueOf(nList.item(i).getAttributes().getNamedItem("lat").getNodeValue().replace(" ", ""));
+                city.longitude = Float.valueOf(nList.item(i).getAttributes().getNamedItem("lon").getNodeValue().replace(" ", ""));
+                // Extracting radiation measurements. Casting the node 'nList.item(i)' to (Element) so we can navigate the DOM with 'getElementsByTagName'.
+                Element element = (Element) nList.item(i);
+                NodeList mList = element.getElementsByTagName("value");
+                for(Integer x = 0; x < mList.getLength(); x++) {
+                    // Building the events and times correlating to them.
+                    Event event = new Event();
+                    Time time = new Time();
+                    event.prefix = nsPrefix.get("event");
+                    event.name = "Ionizing Radiation";
+                    event.measurementUnit = mList.item(x).getAttributes().getNamedItem("unit").getNodeValue();
+                    event.measurementType = mList.item(x).getAttributes().getNamedItem("type").getNodeValue();
+                    event.measurement = mList.item(x).getFirstChild().getNodeValue();
+                    time.prefix = nsPrefix.get("time");
+                    time.start = mList.item(x).getAttributes().getNamedItem("starttime").getNodeValue().replace(" ", "");
+                    time.end = mList.item(x).getAttributes().getNamedItem("endtime").getNodeValue().replace(" ", "");
+                    city.timeList.put(time, event);
+                }
+                cityList.add(city);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        /**for(City temp : cityList) {
+            System.out.println(temp.prefix);
+            System.out.println(temp.name);
+            System.out.println(temp.location);
+            System.out.println(temp.latitude);
+            System.out.println(temp.longitude);
+            temp.getPairs();
+        } **/
+    }
+
+    public ArrayList<City> getEntries() {
+        return this.cityList;
+    }
+
+    public HashMap<String, String> getNsPrefixes() {
+        return this.nsPrefix;
+    }
+
+    public String queryPrefixNs() {
+        Iterator<Map.Entry<String, String>> prefixit = this.getNsPrefixes().entrySet().iterator();
+        String prefixes = "";
+
+        while (prefixit.hasNext()) {
+            prefixes += "PREFIX " + prefixit.next().getKey() + ": " + prefixit.next().getValue();
+        }
+        System.out.println(prefixes);
+        return prefixes;
+    }
+}

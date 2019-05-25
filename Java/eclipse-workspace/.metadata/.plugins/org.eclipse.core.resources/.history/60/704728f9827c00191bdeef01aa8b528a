@@ -1,0 +1,292 @@
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.apache.jena.datatypes.xsd.XSDDatatype;
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.Literal;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.Statement;
+import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.sparql.vocabulary.FOAF;
+import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.OWL;
+import org.apache.jena.vocabulary.RDF;
+import org.apache.jena.vocabulary.RDFS;
+import org.apache.jena.vocabulary.VCARD;
+
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+
+public class Model216 {
+	private static Model model;
+	public void setUpModel() throws ParserConfigurationException, SAXException, IOException {
+		model = ModelFactory.createDefaultModel();
+		
+		Property hasTime = model.createProperty("http://mvrkws.com/", "hasTime");
+		Property hasRad = model.createProperty("http://mvrkws.com/", "hasRad");
+
+		Property hasShelters = model.createProperty("http://mvrkws.com/", "shelters");
+		Property hasWeather = model.createProperty("http://mvrkws.com/", "weather");
+		Property hasDate = model.createProperty("http://mvrkws.com/", "hasDate");
+		Property hasName = model.createProperty("http://mvrkws.com/", "hasName");
+		Property type = model.createProperty("https://schema.com/", "Type");
+		
+        Resource place = model.createResource(model.getNsPrefixURI("dbo") + "Place");
+        Resource settlement = model.createResource(model.getNsPrefixURI("dbo") + "Settlement");
+        Resource village = model.createResource(model.getNsPrefixURI("dbo") + "Village");
+        Resource populatedPlace = model.createResource(model.getNsPrefixURI("dbo") + "PopulatedPlace");
+        Resource location = model.createResource(model.getNsPrefixURI("dbo") + "Location");
+        Resource spatialThing = model.createResource(model.getNsPrefixURI("geo") + "SpatialThing");
+        Property country = model.createProperty(model.getNsPrefixURI("dbo") + "country");
+        Resource norway = model.createResource(model.getNsPrefixURI("dbr") + "Norway");
+		
+		System.out.println(model.getProperty("hasName"));
+		
+		
+		//File file = new File("C:/Users/mvrkw/eclipse-workspace/INFO216Lab1/src/radnett.xml");
+		File file = new File("E:/Markus/Skule/UiB/V19/INFO216/Git/securanoid/datasets/custom/dataset.xml");
+		DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = dBF.newDocumentBuilder();
+		Document document = db.parse(file);
+		
+		NodeList nList = document.getElementsByTagName("city");
+		
+		for(int i = 0; i < nList.getLength(); i++) {
+			Element el = (Element) nList.item(i);
+			String cityName = el.getAttributes().getNamedItem("name").getNodeValue();
+			
+			String URI = "http://example.org/" + cityName;
+			Resource city = model.createResource(URI);
+			
+            Literal cityComment = model.createTypedLiteral(cityName + " is a city located in Norway.", XSDDatatype.XSDstring);
+			city.addProperty(RDF.type, OWL.Thing);
+			city.addProperty(RDF.type, OWL.Thing);
+            city.addProperty(RDF.type, place);
+            city.addProperty(RDF.type, settlement);
+            city.addProperty(RDF.type, spatialThing);
+            city.addProperty(RDF.type, location);
+            city.addProperty(RDF.type, village);
+            city.addProperty(RDF.type, populatedPlace);
+            city.addProperty(RDFS.label, cityName);
+            city.addProperty(RDFS.comment, cityComment);
+            city.addProperty(FOAF.name, cityName);
+            city.addProperty(OWL.sameAs, city);
+			
+			try {
+				NodeList shelters = el.getElementsByTagName("shelter");
+				city.addProperty(OWL.hasValue, shelters.item(0).getTextContent(), XSDDatatype.XSDint);
+			}
+			catch(Exception e){
+				
+			}
+			try {
+				Element weather = (Element) el.getElementsByTagName("weather").item(0);
+				NodeList weatherDates = weather.getElementsByTagName("date");
+				
+				for(int j = 0; j < weatherDates.getLength(); j++) {
+					Element weatherDate = (Element) weatherDates.item(j);
+					NodeList dateTimes = weatherDate.getElementsByTagName("time");
+					
+					String weatherDateString = weatherDate.getAttribute("date-stamp");
+					Resource date = model.createResource("http://example.org/" + weatherDateString);
+					
+					city.addProperty(model.getProperty("hasDate"), date);
+					
+					for(int k = 0; j < dateTimes.getLength(); k++) {
+						Element timeElement = (Element) dateTimes.item(k);
+						String timeString = timeElement.getAttribute("time-stamp");
+						
+						Resource time = model.createResource("http://example.org/" + timeString);
+						date.addProperty(model.getProperty("hasTime"), time);						
+					}
+					
+				}
+			}
+			catch (Exception e) {
+				
+			}
+			
+			
+			
+			
+			/*
+			for(int j = 0; j < values.getLength(); j++) {
+				String rad = values.item(j).getTextContent();
+				String time_s = values.item(j).getAttributes().getNamedItem("starttime").getNodeValue();
+				
+				String timeURI = "http://schema.org/Time#"+time_s;
+				Resource time = model.createResource(timeURI);
+				
+				time.addProperty(model.getProperty("hasRad"), rad);
+				
+				city.addProperty(model.getProperty("hasTime"), time);
+			}
+			*/
+		}
+	}
+	
+	public void selectCity(String cityName) {
+        FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
+
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "SELECT * WHERE { " +
+                " ?cityName rdfs:label '%CITYNAME%' ." +
+                "}";
+        queryString = queryString.replace("%CITYNAME%", cityName);
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                Resource name = soln.getResource("cityName");
+                System.out.println("selectCity found : " + name);
+            }
+        } finally {
+            qexec.close();
+        }
+    }
+	
+	public void selectCityMinimumShelters(int moreShelters) {
+        FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
+
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ." +
+                "FILTER (?value > %SHELTERS%) . " +
+                "}";
+        queryString = queryString.replace("%SHELTERS%", Integer.toString(moreShelters));
+        
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                Resource name = soln.getResource("cityName");
+                System.out.println("selectCityMinimumShelters found : " + name);
+            }
+        } finally {
+            qexec.close();
+        }
+    }
+	
+	public void selectCityWithMostShelters() {
+        FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
+
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ." +
+                "}" +
+                "ORDER BY DESC(?value) LIMIT 1";
+        
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                Resource name = soln.getResource("cityName");
+                System.out.println("selectCityMostShelters found : " + name);
+            }
+        } finally {
+            qexec.close();
+        }
+    }
+	public void selectCityWithLeastShelters() {
+        FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
+
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ." +
+                "}" +
+                "ORDER BY ASC(?value) LIMIT 1";
+        
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                Resource name = soln.getResource("cityName");
+                System.out.println("selectCityLeastShelters found : " + name);
+            }
+        } finally {
+            qexec.close();
+        }
+    }	
+	
+	public void selectCityWithHighestNoidRating() {
+        FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
+
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ;" +
+                " rdfs:label ?name ." +
+                "}" +
+                "ORDER BY ?value ?name";
+        
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                Resource name = soln.getResource("cityName");
+                System.out.println("selectCityWithHighestNoidRating found : " + name);
+            }
+        } finally {
+            qexec.close();
+        }
+    }
+	
+	public void printModel() {
+		StmtIterator iter = model.listStatements();		
+		while(iter.hasNext()) {
+			Statement stmt = iter.nextStatement();
+			Resource subject = stmt.getSubject();
+			Property predicate = stmt.getPredicate();
+			RDFNode object = stmt.getObject();
+			
+			System.out.print(subject.toString());
+			System.out.print(" > " + predicate.toString() + " > ");
+			if(object instanceof Resource) {
+				System.out.print(object.toString());
+			}
+			else {
+				System.out.print(" \"" + object.toString() + "\"");
+			}
+			System.out.println(" .");
+		}
+	}
+}

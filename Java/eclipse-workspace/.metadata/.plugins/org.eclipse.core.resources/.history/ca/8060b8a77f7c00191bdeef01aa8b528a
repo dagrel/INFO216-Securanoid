@@ -1,0 +1,31 @@
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Model216 model = new Model216();
+		try {
+			model.setUpModel();
+			model.printModel();
+			
+			//model.selectCity("Bergen");
+			
+			/*
+			model.selectCityMinimumShelters(3);
+			
+			model.selectCityWithMostShelters();
+			model.selectCityWithLeastShelters();
+			*/
+			
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

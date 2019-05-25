@@ -1,0 +1,38 @@
+package app.assets;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class City {
+    public String prefix;
+    public String name;
+    public String location;
+    public Float longitude;
+    public Float latitude;
+    public HashMap<Time, Event> timeList = new HashMap<>();
+
+    public String getPrefix() {
+        return this.prefix;
+    }
+
+    public void setPrefix(String prefix) {
+        this.prefix = prefix;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void getPairs() {
+        Iterator<Map.Entry<Time, Event>> it = this.timeList.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry<Time, Event> pair = it.next();
+            // System.out.println("Measurement: " + pair.getValue().name + " | Start Time: " + pair.getKey().startTime + " | End Time: " + pair.getKey().endTime + " | Radiation Levels: " + pair.getValue().measurement + pair.getValue().measurementUnit + " (" + pair.getValue().measurementType + ")");
+        }
+    }
+}

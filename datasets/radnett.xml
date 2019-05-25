@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<measurementresources xmlns="https://radnett.dsa.no" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://radnett.dsa.no radnett.xsd">
+<fileinfo>
+<timestamp>2019-05-08T13:30:54Z</timestamp>
+<description>This file contains the latest measurements from NRPAs monitoring network Radnett. Timestamp refers to the time when this data was generated (in UTC). This file is updated 30 minutes passed each hour. This is the same time as official page http://radnett.nrpa.no is updated. Your application must cache the data for 30 minutes. Misuse may cause blocking of the requesting IP.</description>
+</fileinfo>
+<resource id="radnett">
+<name>Radnett</name>
+<description>National gamma dose rate early warning network.</description>
+<url>https://radnett.dsa.no</url>
+<country code="no">Norway</country>
+<operator>
+<name>Norwegian Radiation and Nuclear Safety Authority</name>
+<url>https://www.dsa.no</url>
+<contact>eurdep@dsa.no</contact>
+</operator>
+<terms-of-use>https://data.norge.no/nlod/en/1.0</terms-of-use>
+<stations>
+<station name="Longyearbyen" location="Longyearbyen" lat="78.27" lon="15.49">
+<url>https://radnett.dsa.no/?id=165049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.073</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.073</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.073</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.073</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.073</value>
+</measurements>
+</station>
+<station name="Mehamn" location="Mehamn" lat="71.03" lon="27.83">
+<url>https://radnett.dsa.no/?id=205049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.068</value>
+</measurements>
+</station>
+<station name="Hammerfest" location="Hammerfest" lat="70.67" lon="23.67">
+<url>https://radnett.dsa.no/?id=195049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.076</value>
+</measurements>
+</station>
+<station name="Vardø" location="Vardø" lat="70.37" lon="30.91">
+<url>https://radnett.dsa.no/?id=145049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.075</value>
+</measurements>
+</station>
+<station name="Sørkjosen" location="Sørkjosen" lat="69.79" lon="20.95">
+<url>https://radnett.dsa.no/?id=2705049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.084</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.084</value>
+</measurements>
+</station>
+<station name="Tromsø" location="Tromsø" lat="69.65" lon="18.94">
+<url>https://radnett.dsa.no/?id=185049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.054</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.056</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.054</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.054</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.053</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.054</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.053</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.053</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.056</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.053</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.055</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.054</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.054</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.053</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.052</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.053</value>
+</measurements>
+</station>
+<station name="Karasjok" location="Karasjok" lat="69.61" lon="25.30">
+<url>https://radnett.dsa.no/?id=155049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.074</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.074</value>
+</measurements>
+</station>
+<station name="Svanhovd" location="Svanhovd" lat="69.46" lon="30.04">
+<url>https://radnett.dsa.no/?id=225049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.064</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.061</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.062</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.064</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.073</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.071</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.062</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.064</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.063</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.062</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.062</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.060</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.062</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.060</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.060</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.060</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.062</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.061</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.061</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.062</value>
+</measurements>
+</station>
+<station name="Kautokeino" location="Kautokeino" lat="69.02" lon="23.02">
+<url>https://radnett.dsa.no/?id=2695049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.086</value>
+</measurements>
+</station>
+<station name="Harstad" location="Harstad" lat="68.80" lon="16.54">
+<url>https://radnett.dsa.no/?id=175049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.124</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.123</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.123</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.123</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.122</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.122</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.124</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.127</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.123</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.124</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.123</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.122</value>
+</measurements>
+</station>
+<station name="Svolvær" location="Svolvær" lat="68.24" lon="14.57">
+<url>https://radnett.dsa.no/?id=2715049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T10:00:00Z" endtime="2019-05-02T11:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T09:00:00Z" endtime="2019-05-02T10:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T08:00:00Z" endtime="2019-05-02T09:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T07:00:00Z" endtime="2019-05-02T08:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T06:00:00Z" endtime="2019-05-02T07:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T05:00:00Z" endtime="2019-05-02T06:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T04:00:00Z" endtime="2019-05-02T05:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T03:00:00Z" endtime="2019-05-02T04:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T02:00:00Z" endtime="2019-05-02T03:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T01:00:00Z" endtime="2019-05-02T02:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-02T00:00:00Z" endtime="2019-05-02T01:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T23:00:00Z" endtime="2019-05-02T00:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T22:00:00Z" endtime="2019-05-01T23:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T21:00:00Z" endtime="2019-05-01T22:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T20:00:00Z" endtime="2019-05-01T21:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T19:00:00Z" endtime="2019-05-01T20:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T18:00:00Z" endtime="2019-05-01T19:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T17:00:00Z" endtime="2019-05-01T18:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T16:00:00Z" endtime="2019-05-01T17:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T15:00:00Z" endtime="2019-05-01T16:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T14:00:00Z" endtime="2019-05-01T15:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T13:00:00Z" endtime="2019-05-01T14:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T12:00:00Z" endtime="2019-05-01T13:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-01T11:00:00Z" endtime="2019-05-01T12:00:00Z">0.102</value>
+</measurements>
+</station>
+<station name="Bodø" location="Bodø" lat="67.27" lon="14.39">
+<url>https://radnett.dsa.no/?id=305049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.101</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.101</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.101</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.103</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.100</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.102</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.100</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.101</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.105</value>
+</measurements>
+</station>
+<station name="Mo i Rana" location="Mo i Rana" lat="66.31" lon="14.14">
+<url>https://radnett.dsa.no/?id=315049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.089</value>
+</measurements>
+</station>
+<station name="Brønnøysund" location="Brønnøysund" lat="65.46" lon="12.22">
+<url>https://radnett.dsa.no/?id=325049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.065</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.065</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.064</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.064</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.065</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.063</value>
+</measurements>
+</station>
+<station name="Snåsa" location="Snåsa" lat="64.25" lon="12.38">
+<url>https://radnett.dsa.no/?id=255049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.066</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.067</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.072</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.073</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.070</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.068</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.069</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.070</value>
+</measurements>
+</station>
+<station name="Trondheim" location="Trondheim" lat="63.41" lon="10.47">
+<url>https://radnett.dsa.no/?id=235049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.096</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.092</value>
+</measurements>
+</station>
+<station name="Hitra" location="Hitra" lat="63.64" lon="8.69">
+<url>https://radnett.dsa.no/?id=2725049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.084</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.084</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.084</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.084</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.089</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.088</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.086</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.087</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.085</value>
+</measurements>
+</station>
+<station name="Molde" location="Molde" lat="62.76" lon="7.21">
+<url>https://radnett.dsa.no/?id=335049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.080</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.078</value>
+</measurements>
+</station>
+<station name="Runde" location="Runde" lat="58.56" lon="8.98">
+<url>https://radnett.dsa.no/?id=1875049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.106</value>
+</measurements>
+</station>
+<station name="Dombås" location="Dombås" lat="62.07" lon="9.12">
+<url>https://radnett.dsa.no/?id=285049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.139</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.139</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.138</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.140</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.136</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.137</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.138</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.139</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.137</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.141</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.140</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.141</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.139</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.139</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.137</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.139</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.135</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.137</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.140</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.136</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.140</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.135</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.137</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.136</value>
+</measurements>
+</station>
+<station name="Drevsjø" location="Drevsjø" lat="61.89" lon="12.05">
+<url>https://radnett.dsa.no/?id=395049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.084</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.081</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.085</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.082</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.083</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.083</value>
+</measurements>
+</station>
+<station name="Førde" location="Førde" lat="61.45" lon="5.85">
+<url>https://radnett.dsa.no/?id=345049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.119</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.118</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.117</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.121</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.119</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.122</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.118</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.121</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.122</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.119</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.122</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.117</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.124</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.117</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.118</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.119</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.116</value>
+</measurements>
+</station>
+<station name="Hamar" location="Hamar" lat="60.82" lon="11.07">
+<url>https://radnett.dsa.no/?id=265049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.118</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.118</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.122</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.120</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.117</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.117</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.111</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.115</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.115</value>
+</measurements>
+</station>
+<station name="Hol" location="Hol" lat="60.58" lon="8.41">
+<url>https://radnett.dsa.no/?id=385049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.151</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.148</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.151</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.149</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.151</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.148</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.149</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.148</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.147</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.147</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.149</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.146</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.152</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.150</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.152</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.148</value>
+</measurements>
+</station>
+<station name="Bergen" location="Bergen" lat="60.38" lon="5.33">
+<url>https://radnett.dsa.no/?id=355049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.115</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.119</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.117</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.115</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.115</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.115</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.116</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.112</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.113</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.114</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.111</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.114</value>
+</measurements>
+</station>
+<station name="Kjeller" location="Kjeller" lat="59.98" lon="11.05">
+<url>https://radnett.dsa.no/?id=405049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.132</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.130</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.124</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.124</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.127</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.127</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.127</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.130</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.126</value>
+</measurements>
+</station>
+<station name="Oslo" location="Oslo" lat="59.94" lon="10.72">
+<url>https://radnett.dsa.no/?id=215049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.132</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.135</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.132</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.133</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.134</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.135</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.134</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.134</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.135</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.134</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.136</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.133</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.134</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.133</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.132</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.132</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.130</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.131</value>
+</measurements>
+</station>
+<station name="Vinje" location="Vinje" lat="59.61" lon="7.86">
+<url>https://radnett.dsa.no/?id=295049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.095</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.091</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.092</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.090</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.094</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.093</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.093</value>
+</measurements>
+</station>
+<station name="Halden" location="Halden" lat="59.00" lon="11.53">
+<url>https://radnett.dsa.no/?id=415049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.109</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.109</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.109</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.106</value>
+</measurements>
+</station>
+<station name="Stavern" location="Stavern" lat="58.99" lon="10.03">
+<url>https://radnett.dsa.no/?id=245049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.142</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.142</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.142</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.144</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.144</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.143</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.146</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.144</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.141</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.143</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.141</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.145</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.142</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.144</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.144</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.145</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.141</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.142</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.145</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.143</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.143</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.144</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.143</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.142</value>
+</measurements>
+</station>
+<station name="Stavanger" location="Stavanger" lat="58.96" lon="5.73">
+<url>https://radnett.dsa.no/?id=365049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.130</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.130</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.130</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.127</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.129</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.125</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.131</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.128</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.126</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.128</value>
+</measurements>
+</station>
+<station name="Kilsund" location="Kilsund" lat="0.00" lon="0.00">
+<url>https://radnett.dsa.no/?id=275049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.075</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.079</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.078</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.077</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.076</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.076</value>
+</measurements>
+</station>
+<station name="Lista" location="Lista" lat="58.12" lon="6.57">
+<url>https://radnett.dsa.no/?id=375049</url>
+<measurements>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T11:00:00Z" endtime="2019-05-08T12:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T10:00:00Z" endtime="2019-05-08T11:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T09:00:00Z" endtime="2019-05-08T10:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T08:00:00Z" endtime="2019-05-08T09:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T07:00:00Z" endtime="2019-05-08T08:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T06:00:00Z" endtime="2019-05-08T07:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T05:00:00Z" endtime="2019-05-08T06:00:00Z">0.109</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T04:00:00Z" endtime="2019-05-08T05:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T03:00:00Z" endtime="2019-05-08T04:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T02:00:00Z" endtime="2019-05-08T03:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T01:00:00Z" endtime="2019-05-08T02:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-08T00:00:00Z" endtime="2019-05-08T01:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T23:00:00Z" endtime="2019-05-08T00:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T22:00:00Z" endtime="2019-05-07T23:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T21:00:00Z" endtime="2019-05-07T22:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T20:00:00Z" endtime="2019-05-07T21:00:00Z">0.108</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T19:00:00Z" endtime="2019-05-07T20:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T18:00:00Z" endtime="2019-05-07T19:00:00Z">0.104</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T17:00:00Z" endtime="2019-05-07T18:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T16:00:00Z" endtime="2019-05-07T17:00:00Z">0.106</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T15:00:00Z" endtime="2019-05-07T16:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T14:00:00Z" endtime="2019-05-07T15:00:00Z">0.107</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T13:00:00Z" endtime="2019-05-07T14:00:00Z">0.105</value>
+<value unit="µSv/h" type="T-GAMMA" starttime="2019-05-07T12:00:00Z" endtime="2019-05-07T13:00:00Z">0.105</value>
+</measurements>
+</station>
+</stations>
+</resource>
+</measurementresources>

@@ -1,0 +1,5 @@
+package app.assets;
+
+public class Event {
+
+}

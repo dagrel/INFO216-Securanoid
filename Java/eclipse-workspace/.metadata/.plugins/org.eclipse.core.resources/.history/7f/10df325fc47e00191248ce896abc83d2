@@ -1,0 +1,442 @@
+package app;
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.apache.jena.datatypes.xsd.XSDDatatype;
+import org.apache.jena.graph.BlankNodeId;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.Literal;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.Statement;
+import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.sparql.vocabulary.FOAF;
+import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.OWL;
+import org.apache.jena.vocabulary.RDF;
+import org.apache.jena.vocabulary.RDFS;
+import org.apache.jena.vocabulary.VCARD;
+
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+
+public class Model {
+	private static OntModel model;
+	
+	public void setUpModel() throws ParserConfigurationException, SAXException, IOException {
+		model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
+		
+		Initialize init = new Initialize();
+		model.setNsPrefixes(init.getNsPrefixes());
+		
+		// Custom properties we did not find any fitting resources on
+		Property hasRad = model.createProperty("http://example.org/", "hasRadiation");
+		Property hasShelters = model.createProperty("http://example.org/", "hasShelter");
+		
+		// Existing resources
+        Resource place = model.createResource(model.getNsPrefixURI("dbo") + "Place");
+        Resource settlement = model.createResource(model.getNsPrefixURI("dbo") + "Settlement");
+        Resource village = model.createResource(model.getNsPrefixURI("dbo") + "Village");
+        Resource populatedPlace = model.createResource(model.getNsPrefixURI("dbo") + "PopulatedPlace");
+        Resource location = model.createResource(model.getNsPrefixURI("dbo") + "Location");
+        Resource spatialThing = model.createResource(model.getNsPrefixURI("geo") + "SpatialThing");
+        Resource norway = model.createResource(model.getNsPrefixURI("dbr") + "Norway");
+        Resource temperature = model.createResource(model.getNsPrefixURI("dbo") + "datatype/Temperature");
+        
+        Property country = model.createProperty(model.getNsPrefixURI("dbo") + "country");
+        Property hasAgent = model.createProperty(model.getNsPrefixURI("event"), "hasAgent");
+        Property lat = model.createDatatypeProperty(model.getNsPrefixURI("geo") + "lat");
+        Property lng = model.createDatatypeProperty(model.getNsPrefixURI("geo") + "long");
+
+        Property at = model.createDatatypeProperty(model.getNsPrefixURI("timeline") + "at");
+        
+		Property startDate = model.createProperty(model.getNsPrefixURI("schema"), "startDate");
+		
+		Resource radiation = model.createResource(model.getNsPrefixURI("dbr") + "Ionizing_Radiation");
+		
+		/*
+		Resource rain = model.createResource(model.getNsPrefixURI("tuw") + "Rain");
+		Resource temp = model.createResource(model.getNsPrefixURI("tuw") + "Temperature");
+   		*/
+		Property hasPrec = model.createProperty(model.getNsPrefixURI("tuw") + "hasPrecipitation");
+		Property hasTemp = model.createProperty(model.getNsPrefixURI("tuw") + "hasExteriorTemperature");
+		
+		
+	    Literal IonizingRadiation = model.createTypedLiteral("Ionizing_Radiation");
+	    
+	    radiation.addProperty(RDFS.comment, IonizingRadiation); 
+				
+		
+		//File file = new File("C:/Users/mvrkw/eclipse-workspace/INFO216Lab1/src/radnett.xml");
+        File file = new File("src/dataset.xml");
+		
+		DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = dBF.newDocumentBuilder();
+		Document document = db.parse(file);
+		
+		NodeList nList = document.getElementsByTagName("city");
+		
+		for(int i = 0; i < nList.getLength(); i++) {
+			Element cityElement = (Element) nList.item(i);
+			String cityNameString = cityElement.getAttributes().getNamedItem("name").getNodeValue();
+			
+			//Eliminating spaces in city names
+			cityNameString = cityNameString.replace(" ", "_");
+            Literal cityName = model.createTypedLiteral(cityNameString, XSDDatatype.XSDstring);
+
+			Resource city = model.createResource(cityNameString);
+			
+            Literal cityComment = model.createTypedLiteral(cityName + " is a city located in Norway.", XSDDatatype.XSDstring);
+			city.addProperty(RDF.type, OWL.Thing);
+			city.addProperty(RDF.type, OWL.Thing);
+            city.addProperty(RDF.type, place);
+            city.addProperty(RDF.type, settlement);
+            city.addProperty(RDF.type, spatialThing);
+            city.addProperty(RDF.type, location);
+            city.addProperty(RDF.type, village);
+            city.addProperty(RDF.type, populatedPlace);
+            city.addProperty(RDFS.label, cityName);
+            city.addProperty(RDFS.comment, cityComment);
+            city.addProperty(FOAF.name, cityName);
+            city.addProperty(OWL.sameAs, city);
+			
+			try {
+				NodeList shelters = cityElement.getElementsByTagName("shelter");
+				city.addProperty(OWL.hasValue, shelters.item(0).getTextContent(), XSDDatatype.XSDint);
+			}
+			catch(Exception e){
+				
+			}
+			try {
+				Element weather = (Element) cityElement.getElementsByTagName("weather").item(0);
+				NodeList weatherDates = weather.getElementsByTagName("date");
+				
+				for(int j = 0; j < weatherDates.getLength(); j++) {
+					Element weatherDate = (Element) weatherDates.item(j);
+					NodeList dateTimes = weatherDate.getElementsByTagName("time");
+					
+					Literal weatherDateLiteral  = model.createTypedLiteral(weatherDate.getAttribute("date-stamp"), XSDDatatype.XSDdate);	
+					
+					Resource date;
+					try {
+						date = model.getResource(cityName + "_" + weatherDate.getAttribute("date-stamp"));
+					}
+					catch(Exception e) {
+						date = model.createResource(cityName + "_" + weatherDate.getAttribute("date-stamp"));
+					}
+			        
+			        date.addProperty(OWL.hasValue, weatherDateLiteral);    
+			        					
+					for(int k = 0; j < dateTimes.getLength(); k++) {
+						Element timeElement = (Element) dateTimes.item(k);
+						String timeString = timeElement.getAttribute("time-stamp");
+						
+						Literal weatherTimeLiteral = model.createTypedLiteral(timeString, XSDDatatype.XSDtime);
+						Resource weatherTime = model.createResource(cityName + "_" + timeString);
+						
+						weatherTime.addProperty(OWL.hasValue, weatherTimeLiteral);
+						
+						
+						NodeList timeEvents = timeElement.getChildNodes();
+						
+						for(int l = 0; l < timeEvents.getLength(); l++) {
+							try {
+								Element event = (Element) timeEvents.item(l);
+								
+								String tag = event.getTagName();
+								
+								if(tag == "air_temperature") {
+									Resource temp;
+									try {
+										temp = model.getResource(cityNameString + event.getTextContent());
+									}
+									catch(Exception e) {
+										temp = model.createResource(cityNameString + event.getTextContent());
+										temp.addProperty(OWL.hasValue, event.getTextContent(), XSDDatatype.XSDfloat);
+									}
+									weatherTime.addProperty(hasTemp, temp);
+								}
+								else if(tag == "precipitation_amount") {
+									Resource rain;
+									try {
+										rain = model.getResource(cityNameString + event.getTextContent());
+									}
+									catch(Exception e) {
+										rain = model.createResource(cityNameString + event.getTextContent());
+										rain.addProperty(OWL.hasValue, event.getTextContent(), XSDDatatype.XSDfloat);
+									}
+									weatherTime.addProperty(hasPrec, rain);
+								}								
+							}
+							catch (Exception e) {
+							}
+						}
+						date.addProperty(at, weatherTime);	
+						city.addProperty(startDate, date);
+					}
+				}
+			}
+			catch (Exception e) {
+			}
+
+			try {
+				Element radiationElement = (Element) cityElement.getElementsByTagName("radiation").item(0);
+				
+				NodeList radiationDates = radiationElement.getChildNodes();
+				
+				for(int j = 0; j < radiationDates.getLength(); j++) {
+					Element radiationDateElement = (Element) radiationElement.getElementsByTagName("date").item(j);
+					
+					Literal radiationDateLiteral = model.createTypedLiteral(radiationDateElement.getAttribute("date-stamp"), XSDDatatype.XSDdate);
+					
+					Resource radiationDate;
+					try {
+						radiationDate = model.getResource(cityName + "_" + radiationDateLiteral);
+					}
+					catch(Exception e) {
+						radiationDate = model.createResource(cityName + "_" + radiationDateLiteral);
+					}
+					
+					NodeList radiationTimes = radiationDateElement.getChildNodes();
+					
+					for(int k = 0; k < radiationTimes.getLength(); k++) {
+						Element radiationTimeElement = (Element) radiationDateElement.getElementsByTagName("time").item(j);
+						
+						Literal radiationTimeLiteral = model.createTypedLiteral(radiationTimeElement.getAttribute("time-stamp"), XSDDatatype.XSDtime);
+						
+						Resource radiationTime;
+						try {
+							radiationTime = model.getResource(cityName + "_" + radiationTimeLiteral);
+						}
+						catch(Exception e) {
+							radiationTime = model.createResource(cityName + "_" + radiationTimeLiteral);
+						}
+						
+						String radMesString = radiationTimeElement.getTextContent().replaceAll("\\s", "");
+						
+						
+						Element radiationMeasurementElement = (Element) radiationTimeElement.getElementsByTagName("measurement").item(0);
+						Literal radiationMeasurementLiteral = model.createTypedLiteral(radMesString, XSDDatatype.XSDfloat);
+						
+						
+						Resource radiationMeasurement = model.createResource(cityName + "_" + radMesString);
+						
+						radiationMeasurement.addProperty(RDF.type, radiation);
+						radiationMeasurement.addProperty(OWL.hasValue, radiationMeasurementLiteral);
+						
+					    radiationTime.addProperty(hasRad, radiationMeasurement);								
+						radiationDate.addProperty(at, radiationTime);
+						city.addProperty(startDate, radiationDate);
+					}
+				}
+			}
+			catch(Exception e) {
+				
+			}
+			
+			
+		}
+	}
+	
+	public void selectCity(String cityName) {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "SELECT * WHERE { " +
+                " ?cityName rdfs:label '%CITYNAME%' ." +
+                "}";
+        
+        queryString = queryString.replace("%CITYNAME%", cityName);
+		executeQuery("selectCity", queryString);
+    }
+	
+	public void selectCityMinimumShelters(int moreShelters) {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ." +
+                "FILTER (?value > %SHELTERS%) . " +
+                "}";
+        
+        queryString = queryString.replace("%SHELTERS%", Integer.toString(moreShelters));
+		executeQuery("selectCityMinimumShelters", queryString);
+    }
+	
+	public void selectCityWithMostShelters() {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ." +
+                "}" +
+                "ORDER BY DESC(?value) LIMIT 1";
+        
+		executeQuery("selectCityWithMostShelters", queryString);
+    }
+	public void selectCityWithLeastShelters() {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "SELECT * WHERE { " +
+                " ?cityName owl:hasValue ?value ." +
+                "}" +
+                "ORDER BY ASC(?value) LIMIT 1";
+        
+		executeQuery("selectCityWithLeastShelters", queryString);
+    }	
+	
+	public void selectCitiesByMostRain(int limit) {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX m:    <http://mvrkws.com/>" +
+                "PREFIX schema: <https://schema.org/> " +
+                "SELECT ?cityName ?rain WHERE { " +
+                " ?city rdfs:label ?cityName ;" + 
+                		"schema:startDate ?date ." +
+                " ?date m:hasTime ?time ." +
+                "?time m:hasRain ?rain . " +
+                "}" +
+                "ORDER BY DESC(?rain) ASC(?cityName) LIMIT %LIMIT%";
+        
+        queryString = queryString.replace("%LIMIT%", Integer.toString(limit));
+		executeQuery("selectCitiesByMostRain", queryString);
+    }
+	
+	public void selectCityTotalRain(String city) {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX m:    <http://mvrkws.com/>" +
+                "PREFIX schema: <https://schema.org/> " +
+                "SELECT (SUM(?rain) as ?sum) WHERE { " +
+                " ?city rdfs:label '%city%' ;" + 
+                		"schema:startDate ?date ." +
+                " ?date m:hasTime ?time ." +
+                "?time m:hasRain ?rain . " +
+                "}";
+        
+        queryString = queryString.replace("%city%", city);
+		executeQuery("selectCityTotalRain", queryString);
+    }
+	
+	public void selectCityWithMostTotalRain() {
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX m:    <http://mvrkws.com/>" +
+                "PREFIX schema: <https://schema.org/> " +
+                "SELECT ?cityName (SUM(?rain) as ?sum) WHERE { " +
+                " ?city rdfs:label ?cityName ;" + 
+                		"schema:startDate ?date ." +
+                " ?date m:hasTime ?time ." +
+                "?time m:hasRain ?rain . " +
+                "}" +
+                "GROUP BY (?cityName) ORDER BY DESC(?sum) ASC(?cityName) LIMIT 1";
+        
+		executeQuery("selectCityWithMostTotalRain", queryString);
+    }
+	
+	public void selectCitiesByRadiation() {
+		String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX m:    <http://mvrkws.com/>" +
+                "PREFIX schema: <https://schema.org/> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>" +
+
+                "SELECT ?cityName ?radiation WHERE { " +
+                " ?city rdfs:label ?cityName ;" + 
+                		"schema:startDate ?date ." +
+                "?date timeline:at ?time . " +
+                "?time owl:hasValue ?rad ." +
+                "?rad rdf:type dbr:Ionizing_Radiation ;" +
+                		"owl:hasValue ?radiation ." +
+                "}" +
+                "ORDER BY DESC(?radiation) ASC(?cityName)";
+		executeQuery("selectCitiesByRadiation", queryString);
+	}
+	
+	public void selectCityWithHighestNoidRating() {
+
+        String queryString =
+                "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>  " +
+                "PREFIX dbr: <http://dbpedia.org/resource/> " +
+                "PREFIX geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX owl:    <http://www.w3.org/2002/07/owl#>" +
+                "PREFIX m:    <http://mvrkws.com/>" +
+                "PREFIX schema: <https://schema.org/> " +
+                "PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>" +
+                "PREFIX ex: <http://example.org/> " +
+                "PREFIX tuw: <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> " +
+                //"SELECT ?cityName ?radiation ?shelters ?rain ?temperature WHERE { " +
+                "SELECT ?cityName ?o ?o2 WHERE {" +
+                " ?city rdfs:label ?cityName ;" +
+                	 	"schema:startDate ?date ." +
+                "?date timeline:at ?time . " + 
+                "?time tuw:hasExteriorTemperature ?o . " +
+                "?o ?p ?o2 . " +
+                /*
+                "?time ex:hasRadiation ?rad ." +
+                "?rad owl:hasValue ?radiation . " +
+                */
+                "}";// +
+                //"ORDER BY ASC(?cityname) DESC(?radiation) DESC(?shelters) DESC(?rain) DESC(?temperature)";
+        
+		executeQuery("selectCityWithHighestNoidRating", queryString);
+    }
+
+	
+	public void executeQuery(String method, String queryString) {
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+                QuerySolution soln = results.nextSolution();
+                //Resource name = soln.getResource("cityName");
+                System.out.println(method + " found : " + soln);
+            }
+        } finally {
+            qexec.close();
+        }
+	}
+	
+	public void printModel() {
+		StmtIterator iter = model.listStatements();		
+		while(iter.hasNext()) {
+			Statement stmt = iter.nextStatement();
+			Resource subject = stmt.getSubject();
+			Property predicate = stmt.getPredicate();
+			RDFNode object = stmt.getObject();
+			
+			System.out.print(subject.toString());
+			System.out.print(" > " + predicate.toString() + " > ");
+			if(object instanceof Resource) {
+				System.out.print(object.toString());
+			}
+			else {
+				System.out.print(" \"" + object.toString() + "\"");
+			}
+			System.out.println(" .");
+		}
+	}
+}

@@ -1,0 +1,59 @@
+package app;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.xml.sax.SAXException;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Model model = new Model();
+						
+		try {
+			model.setUpModel();
+
+			/*
+			ArrayList<String> result = model.selectCityWithHighestNoidRating();
+			
+			System.out.println("RESULT");
+			for(String res : result) {
+				System.out.println(res);
+			}
+			System.out.println("DONE");
+			*/
+			
+			ArrayList<String> result = model.getNoid();
+			for(String res : result) {
+				System.out.println(res);
+			}
+			
+			
+			//model.printModel();
+			
+			//model.selectCitiesByRadiation();
+
+			//model.selectCitysNewestData("Bergen");
+			
+			//model.selectCityWithMostTotalRain();
+			//model.selectCityTotalRain("Drevsjø");
+			//model.selectCitiesByMostRain(10);
+						
+			//model.selectCity("Bergen");
+			
+			/*
+			model.selectCityMinimumShelters(3);
+			
+			model.selectCityWithMostShelters();
+			model.selectCityWithLeastShelters();
+			*/
+			
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
